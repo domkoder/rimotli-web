@@ -1,0 +1,190 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: CircularStdBook;
+	src: url("../fonts/CircularStdBook.ttf");
+	font-style: normal;
+}
+
+body {
+	font-family: CircularStdBook;
+	font-style: normal;
+	color: #e5e5e5;
+	background: radial-gradient(
+		65.69% 134.81% at 22.66% 15.07%,
+		#4b4566 0%,
+		#3f3d48 100%
+	);
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #e5e5e5;
+}
+
+.text--blue {
+	color: rgba(47, 147, 203, 1);
+}
+
+.main {
+	background: linear-gradient(
+		180deg,
+		rgba(98, 98, 98, 0) 0%,
+		rgba(43, 42, 42, 0.88) 87.71%
+	);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.header {
+	flex: 1;
+	padding: 2rem;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 7;
+	padding: 1rem;
+}
+
+.hero__paragraph {
+	width: 250px;
+	font-weight: 450;
+	font-size: 24px;
+	line-height: 102.5%;
+	letter-spacing: -0.025em;
+}
+
+.hero__heading {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 49px;
+	letter-spacing: -0.025em;
+	margin-top: 21px;
+}
+
+.hero__cta-container {
+	margin-top: 33px;
+}
+
+.hero__cta {
+	font-weight: 450;
+	font-size: 24px;
+	line-height: 102.5%;
+	letter-spacing: -0.025em;
+	padding: 12px 40px;
+	border: 1px solid #2f93cb;
+	margin-top: 33px;
+	margin-bottom: 11px;
+}
+
+.hero__cta-text {
+	font-weight: 450;
+	font-size: 14px;
+	line-height: 102.5%;
+	letter-spacing: -0.025em;
+	margin-top: 1.6rem;
+	text-align: center;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	flex: 2;
+	padding: 1rem;
+}
+
+.footer__email {
+	font-weight: 450;
+	font-size: 12.1379px;
+	line-height: 102.5%;
+	letter-spacing: -0.025em;
+}
+
+.address {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 230px;
+	justify-content: space-between;
+}
+
+.local-address {
+	text-align: right;
+}
+
+.foreign-address {
+	text-align: left;
+}
+
+.address__text {
+	font-weight: 450;
+	font-size: 14px;
+	line-height: 102.5%;
+	letter-spacing: -0.025em;
+	color: #787878;
+}
+
+.address__phone {
+	font-family: Circular Std;
+	font-weight: 450;
+	font-size: 12.1379px;
+	line-height: 102.5%;
+	letter-spacing: -0.025em;
+}
+
+@media only screen and (max-width: 800px) {
+	.header {
+		/* border: 2px solid green; */
+	}
+
+	.hero {
+		/* border: 2px solid red; */
+		justify-content: flex-start;
+		margin-top: 60px;
+	}
+
+	.hero__paragraph {
+		width: 204px;
+		font-size: 19.584px;
+		line-height: 102.5%;
+	}
+
+	.hero__heading {
+		font-weight: 500;
+		font-size: 40.298px;
+		line-height: 41px;
+		margin-top: 27px;
+		width: 293px;
+	}
+
+	.hero__cta-container {
+		margin-top: 55px;
+	}
+
+	.hero__cta {
+		margin-bottom: 0px;
+		width: 100%;
+	}
+
+	.hero__cta-text {
+		text-align: center;
+		margin-top: 1.6rem;
+	}
+
+	.footer {
+		flex: 1;
+	}
+}
